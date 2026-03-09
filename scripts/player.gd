@@ -12,7 +12,6 @@ const VERTICAL_FOV_RADIANS := 1.5;
 var _camera : Camera3D;
 
 
-
 func _init(pos : Vector3) -> void:
 	set_position(pos);
 
@@ -27,8 +26,6 @@ func _ready() -> void:
 func _input(event : InputEvent) -> void:
 	if event is InputEventMouseMotion:
 		# поворот туловища по курсу:
-		#rotate_y(-event.relative.x * MOUSE_SENSITIVITY_HDG);
-		#rotation.y -= event.relative.x * MOUSE_SENSITIVITY_HDG;
 		rotate(transform.basis.y, -event.relative.x * MOUSE_SENSITIVITY_HDG);
 		# поворот камеры по тангажу:
 		_camera.rotation.x -= event.relative.y * MOUSE_SENSITIVITY_PITCH;

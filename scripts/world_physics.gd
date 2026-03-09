@@ -4,7 +4,6 @@ extends Node
 const EARTH_RADIUS := 20.0;
 
 
-
 func get_earth_radius() -> float:
 	return EARTH_RADIUS;
 

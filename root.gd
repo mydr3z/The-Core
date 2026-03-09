@@ -1,6 +1,13 @@
 extends Node3D
 
 
+const CUBE_SIZE_MIN : float = 0.5;
+const CUBE_SIZE_MAX : float = 3.0;
+
+const QUANTITY_OF_CUBES : int = 100;
+const QUANTITY_OF_SPHERES : int = 100;
+
+
 var _earth_sphere : CSGSphere3D;
 
 
@@ -13,16 +20,16 @@ func _ready() -> void:
 
 
 func _create_spheres() -> void:
-	for i in 100:
+	for i in QUANTITY_OF_SPHERES:
 		var sphere := CSGSphere3D.new();
 		sphere.set_position(WorldPhysics.get_rand_pos_on_grnd());
 		add_child(sphere);
 
 
 func _create_cubes() -> void:
-	for i in 100:
+	for i in QUANTITY_OF_CUBES:
 		var cube := CSGBox3D.new();
-		cube.size *= randf_range(0.5, 3.0);
+		cube.size *= randf_range(CUBE_SIZE_MIN, CUBE_SIZE_MAX);
 		cube.set_position(WorldPhysics.get_rand_pos_on_grnd());
 		cube.basis = WorldPhysics.get_correct_basis(cube.basis, cube.position);
 		add_child(cube);
