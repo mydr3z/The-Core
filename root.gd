@@ -22,6 +22,7 @@ func _create_spheres() -> void:
 func _create_cubes() -> void:
 	for i in 100:
 		var cube := CSGBox3D.new();
+		cube.size *= randf_range(0.5, 3.0);
 		cube.set_position(WorldPhysics.get_rand_pos_on_grnd());
 		cube.basis = WorldPhysics.get_correct_basis(cube.basis, cube.position);
 		add_child(cube);
