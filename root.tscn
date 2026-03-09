@@ -10,15 +10,7 @@ flip_faces = true
 radial_segments = 32
 rings = 16
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.9234515, 0.38371518, 0, -0.38371518, 0.9234515, 0, 0, 0)
-
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 18, 0)
-light_color = Color(0.3634665, 0.6802222, 0.35959387, 1)
-omni_range = 15.244
-
-[node name="OmniLight3D2" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -18, 0)
-light_color = Color(0.8353732, 0.49713832, 0.23553503, 1)
-omni_range = 15.244
+light_color = Color(0.3318217, 0.95620066, 0.33279783, 1)
+light_energy = 10.0
+omni_range = 25.0
