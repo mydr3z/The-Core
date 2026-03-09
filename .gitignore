@@ -1,0 +1,33 @@
+# Godot specific ignores
+.godot/
+*.import
+*.translation
+export.cfg
+export_presets.cfg
+
+# Imported assets (can be regenerated)
+.import/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Compiled Objects
+*.o
+*.os
+*.so
+*.dylib
+*.dll
+*.exe
+*.lib
+
+# Godot-specific exports
+*.apk
+*.exe
+*.pck
+*.zip
