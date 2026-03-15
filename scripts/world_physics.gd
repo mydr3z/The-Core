@@ -33,4 +33,4 @@ func get_correct_position(position : Vector3) -> Vector3:
 
 
 func get_gravity_accel(position : Vector3) -> float:
-	return GRAVITY;
+	return GRAVITY * position.length() / EARTH_RADIUS;

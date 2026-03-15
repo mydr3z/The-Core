@@ -62,5 +62,6 @@ func _process(delta: float) -> void:
 
 
 func _jump() -> void:
-	_vel_y = JUMP_POWER;
-	_is_in_jump = true;
+	if not _is_in_jump:
+		_vel_y = JUMP_POWER;
+		_is_in_jump = true;
