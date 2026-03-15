@@ -3,6 +3,8 @@ extends Node
 
 const EARTH_RADIUS := 20.0;
 
+const GRAVITY = 9.8;
+
 
 func get_earth_radius() -> float:
 	return EARTH_RADIUS;
@@ -28,3 +30,7 @@ func get_correct_basis(basis : Basis, position : Vector3) -> Basis:
 
 func get_correct_position(position : Vector3) -> Vector3:
 	return position.normalized() * EARTH_RADIUS;
+
+
+func get_gravity_accel(position : Vector3) -> float:
+	return GRAVITY;
