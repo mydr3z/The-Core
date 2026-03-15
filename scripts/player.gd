@@ -4,6 +4,7 @@ class_name Player
 
 const EYE_HEIGHT := 1.5;
 const SPEED := 1.5;
+const RUN_SPEED := 3;
 const MOUSE_SENSITIVITY_HDG := 0.002;
 const MOUSE_SENSITIVITY_PITCH := 0.002;
 const VERTICAL_FOV_RADIANS := 1.5;
@@ -40,4 +41,4 @@ func _process(delta: float) -> void:
 	# получение направления движения:
 	var input_dir = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down");
 	var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized();
-	position += direction * SPEED * delta;
+	position += direction * RUN_SPEED * delta if Input.is_action_pressed("ui_run") else direction * SPEED * delta;
