@@ -1,7 +1,7 @@
 extends Node
 
 
-const EARTH_RADIUS := 20.0;
+const EARTH_RADIUS := 150.0;
 
 const GRAVITY = 9.8;
 

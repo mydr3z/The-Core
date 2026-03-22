@@ -11,7 +11,7 @@ const MOUSE_SENSITIVITY_HDG := 0.002;
 const MOUSE_SENSITIVITY_PITCH := 0.002;
 const VERTICAL_FOV_RADIANS := 1.5;
 
-const JUMP_POWER := 10.0;
+const JUMP_POWER := 37.5;
 
 var _camera : Camera3D;
 

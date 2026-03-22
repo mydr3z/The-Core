@@ -1,10 +1,10 @@
 extends Node3D
 
 
-const CUBE_SIZE_MIN : float = 0.5;
-const CUBE_SIZE_MAX : float = 3.0;
+const CUBE_SIZE_MIN : float = 5.0;
+const CUBE_SIZE_MAX : float = 10.0;
 
-const QUANTITY_OF_CUBES : int = 100;
+const QUANTITY_OF_CUBES : int = 500;
 const QUANTITY_OF_SPHERES : int = 100;
 
 

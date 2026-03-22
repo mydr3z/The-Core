@@ -12,5 +12,5 @@ rings = 16
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
 light_color = Color(0.3318217, 0.95620066, 0.33279783, 1)
-light_energy = 10.0
-omni_range = 25.0
+light_energy = 50.0
+omni_range = 200.0
